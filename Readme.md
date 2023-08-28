@@ -8,13 +8,13 @@
 **[[Run Online]](https://codecentral.devexpress.com/t300124/)**
 <!-- run online end -->
 
-This example demonstrates how to customize default editors in the built-in the [Filter Builder](https://docs.devexpress.com/AspNet/5138/components/grid-view/concepts/filter-data/filter-control).
+This example demonstrates how to customize default editors in the built-in [Filter Builder](https://docs.devexpress.com/AspNet/5138/components/grid-view/concepts/filter-data/filter-control).
 
 ![Filter builder with custom editors](custom-editors.png)
 
-The [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control implements the following events that allows you to customize the editors:
+The [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control implements the following events that allow you to customize the editors:
 
-* The [FilterControlCriteriaValueEditorCreate](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.FilterControlCriteriaValueEditorCreate) event allows you to replace the default [criteria value](https://docs.devexpress.com/AspNet/11155/components/data-editors/aspxfiltercontrol/visual-elements#criteria-value) editor with a custom editor. In the event handler, you can set basic editor properties.
+* The [FilterControlCriteriaValueEditorCreate](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.FilterControlCriteriaValueEditorCreate) event allows you to replace the default [criteria value](https://docs.devexpress.com/AspNet/11155/components/data-editors/aspxfiltercontrol/visual-elements#criteria-value) editor with a custom editor. You can set basic editor properties in the event handler.
   ```cs
   protected void grid_FilterControlCriteriaValueEditorCreate(object sender, FilterControlCriteriaValueEditorCreateEventArgs e) {
       if(e.Column.PropertyName == "NeedAlert") {
