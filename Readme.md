@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Grid for ASP.NET Web Forms - How to customize the default editor in the built-in the Filter Builder
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t300124/)**
-<!-- run online end -->
 
 This example demonstrates how to customize default editors in the built-in [Filter Builder](https://docs.devexpress.com/AspNet/5138/components/grid-view/concepts/filter-data/filter-control).
 
